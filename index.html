@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <!--LINK TO STYLESHEET-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--LINK TO GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap" rel="stylesheet">
+
+    
+    <!--TITLE OF QUIZ WEBPAGE-->
+    <title>Bootcamp Coding Quiz</title>
+
+  </head>
+
+  <!--HEADER WITH TIMER ELEMENTS-->
+  <header>
+    <div class="timer center">Timer: <span id="time">0</span></div>
+  </header>
+  
+  <body>
+    <!--INSTRUCTION COVER-->
+      <div id="instruction-cover">
+        <h1>Bootcamp Coding Quiz</h1>
+        <p>This quiz evaluates module 1, 2, 3 and 4. </p> 
+        <p>Your score will be equal to the time you finish the quiz.</p>
+        <p>Take your time responding as each incorrect answer will penalize 15 seconds. </p>
+        </p>Good luck!</p>
+        <button id="startBtn">Start Quiz</button>
+      </div>
+
+      <!--QUESTIONS COVER-->
+      <div id="questions" class="hide">
+        <h2 id="no-question"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <!--FINAL SCORE COVER-->
+      <div id="finished-cover" class="hide">
+        <h2>You finished the Coding Quiz!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter your name: <input type="text" id="name" />
+          <button id="submit">Submit</button>
+      </p>
+      </div>
+          
+    <!--LINKS TO JAVASCRIPT-->
+    <script src="./js/process.js"></script>
+    <script src="./js/questions.js"></script>
+  </body>
+</html>
